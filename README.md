@@ -8,13 +8,17 @@
 └── royalrangers.api.vagrant
 ```
 
-2. Start VM 
+2. Go to directory `royalrangers.api.vagrant`
+
+3. Clone repository `git clone https://github.com/zpawn/royalrangers.backend.vagrant.git ./`
+
+4. Start VM 
 ```vagrant up```
 
-3. Connect to vm
+5. Connect to vm
 ```vagrant ssh```
 
-4. Install dependencies
+6. Install dependencies
 ```
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -23,7 +27,7 @@ sdk install gradle
 gradle -v 
 ```
 
-5. Run Java Server
+7. Run Java Spring Server
 ```
 cd /var/www/royalrangers.api
 gradle bootRun
