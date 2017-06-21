@@ -10,13 +10,12 @@ Vagrant.configure(2) do |config|
 	end
 
 	# forward application port
-	# config.vm.network "forwarded_port", guest: 80, host: 8080
 	config.vm.network "forwarded_port", guest: 8080, host: 8080
 
 	# create private network
 	config.vm.network "private_network", ip: "172.16.1.99"
 
-	config.vm.synced_folder "./../royalrangers.backend/", "/var/www/royalrangers.backend"
+	config.vm.synced_folder "./../royalrangers.api/", "/var/www/royalrangers.api"
 
 	# install dependencies
 	config.vm.provision "shell", path: "./bootstrap.sh"

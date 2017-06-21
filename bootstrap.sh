@@ -9,7 +9,7 @@ user=debian-sys-maint
 password=root1pass
 mysql --user="$user" --password="$password" --execute="
     use mysql;
-    update user set Password=PASSWORD('') where User='root';
+    update user set Password=PASSWORD('root') where User='root';
     flush privileges;
     quit
 "
