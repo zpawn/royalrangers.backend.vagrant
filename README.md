@@ -8,14 +8,14 @@
 └── royalrangers.api.vagrant
 ```
 
-2. Go to directory `royalrangers.api.vagrant`
+2. Go to directory `/royalrangers.api.vagrant`
 
 3. Clone repository `git clone https://github.com/zpawn/royalrangers.backend.vagrant.git ./`
 
 4. Start VM 
 ```vagrant up```
 
-5. Connect to vm
+5. Connect to VM
 ```vagrant ssh```
 
 6. Install dependencies
